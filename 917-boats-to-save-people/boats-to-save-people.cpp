@@ -7,17 +7,13 @@ public:
         int boats = 0;
 
         while(light <= heavy){
-            if(people[heavy] == limit){
-                heavy --;
-                boats++;
-            }
-            else if(people[light] + people[heavy] > limit){
+            if(people[light] + people[heavy] <= limit){
+                light++;
                 heavy--;
                 boats++;
             }
             else{
                 boats++;
-                light++;
                 heavy--;
             }
         }
