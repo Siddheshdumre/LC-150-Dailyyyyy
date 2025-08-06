@@ -6,7 +6,7 @@ public:
             freq[c]++;
         }
 
-        for(char c: ransomNote){
+        for(char c: ransomNote){ //if the ransomnote char exist then -1 from the map
             if(freq[c] <= 0){
                 return false;
             }
