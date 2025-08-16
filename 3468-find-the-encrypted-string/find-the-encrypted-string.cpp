@@ -6,9 +6,7 @@ public:
 
         string ans;
         for(int i= 0; i<n; i++){
-
-            int j = (i+k)%n;
-            ans += s[j]; 
+            ans.push_back(s[(i+k)%n]);
 
         }
 
